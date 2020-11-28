@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li {
+    margin-bottom: 0;
+    color: $color-black;
+}
+
+body {
+    font-family: $font-family-roboto;
+    & h1 {
+        font-weight: 600;
+        font-size: 2.2rem;
+        @media (max-width: 576px) {
+            font-size: 2rem;
+        }
+    }
+    & h2 {
+        font-weight: 600;
+        font-size: 2rem;
+        @media (max-width: 576px) {
+            font-size: 1.7rem;
+        }
+    }
+    & h3 {
+        font-weight: 600;
+        font-size: 1.7rem;
+        @media (max-width: 576px) {
+            font-size: 1.4rem;
+        }
+    }
+    & h4 {
+        font-weight: 600;
+        font-size: 1.4rem;
+        @media (max-width: 576px) {
+            font-size: 1.1rem;
+        }
+    }
+    & p,
+    & li,
+    & a {
+        font-size: 1rem;
+        @media (max-width: 576px) {
+            font-size: 0.8rem;
+        }
+    }
+    & .page {
+        padding: 60px 0;
+        min-height: calc(100vh - 95px);
+    }
+}
