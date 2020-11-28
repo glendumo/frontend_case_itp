@@ -1,6 +1,7 @@
 // imports
 import { request } from "../lib/datocms";
 import { ListItem } from "../components/recipes";
+import Head from "next/head";
 
 // create query for recipe cards
 const RECIPES_QUERY = `query Recipes {
@@ -30,6 +31,9 @@ export async function getStaticProps() {
 export default function Recipes({ data }) {
     return (
         <main className="app-main">
+            <Head>
+                <title>RecipeRoom</title>
+            </Head>
             <div className="page page--recipes">
                 <div className="container">
                     <h1>Recipes</h1>

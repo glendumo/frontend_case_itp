@@ -1,6 +1,7 @@
 // imports
 import { request } from "../../lib/datocms";
 import { Image } from "react-datocms";
+import Head from "next/head";
 
 // get ID's of all recipes
 export async function getStaticPaths() {
@@ -25,6 +26,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+    console.log(params);
     // create query for recipe detail
     const RECIPE_DETAIL_QUERY = `query RecipeDetail {
       recipe(filter: {id: {eq: "${params.id}"}}) {
@@ -57,6 +59,9 @@ export async function getStaticProps({ params }) {
 export default function RecipeDetail({ data }) {
     return (
         <main className="app-main">
+            <Head>
+                <title>RecipeRoom - {data.recipe.title}</title>
+            </Head>
             <div className="page page--recipe-detail">
                 <div className="container">
                     <h1>
