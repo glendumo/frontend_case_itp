@@ -26,7 +26,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    console.log(params);
     // create query for recipe detail
     const RECIPE_DETAIL_QUERY = `query RecipeDetail {
       recipe(filter: {id: {eq: "${params.id}"}}) {
