@@ -1,0 +1,10 @@
+.app-footer {
+    background-color: $color-green;
+    & .legal {
+        text-align: center;
+        padding: 5px 0;
+        & span:first-of-type {
+            margin-right: 20px;
+        }
+    }
+}

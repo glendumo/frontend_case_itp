@@ -1,0 +1,16 @@
+.app-header {
+    background-color: $color-green;
+    text-align: center;
+    & .navigation {
+        padding: 10px 0;
+        & .logo {
+            font-size: 1.7rem;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $color-blue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
