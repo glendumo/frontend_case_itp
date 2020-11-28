@@ -1,0 +1,58 @@
+.page--recipe-detail {
+    & .detail {
+        &-container {
+            margin-top: 30px;
+            & .recipe-info {
+                margin-top: 30px;
+                & h2 {
+                    margin-bottom: 10px;
+                }
+                & div {
+                    margin-bottom: 30px;
+                    & ul {
+                        list-style: disc;
+                        transition: all 0.3s ease-in-out;
+                        & li {
+                            margin-bottom: 5px;
+                        }
+                        & li:hover {
+                            list-style: circle;
+                        }
+                    }
+                    & ol {
+                        list-style: decimal;
+                        transition: all 0.3s ease-in-out;
+                        & li {
+                            margin-bottom: 5px;
+                        }
+                        & li:hover {
+                            list-style: disc;
+                        }
+                    }
+                }
+                & .ingredients,
+                & .method {
+                    width: 70%;
+                    @media (max-width: 576px) {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+        &-info {
+            &-content {
+                @media (max-width: 576px) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                & h4 {
+                    margin-bottom: 20px;
+                }
+                & em {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}

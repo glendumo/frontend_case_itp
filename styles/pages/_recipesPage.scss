@@ -1,0 +1,37 @@
+.page--recipes {
+    & .recipes-list {
+        margin-top: 30px;
+        & a {
+            text-decoration: none;
+        }
+        &-item {
+            border-radius: 15px;
+            background-color: $color-light;
+            margin-bottom: 30px;
+            transition: all 0.3s ease-in-out;
+            & .image {
+                border-radius: 15px 15px 0 0;
+                height: 250px;
+                transition: all 0.3s ease-in-out;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .title {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 10px 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                background-color: $color-green;
+                box-shadow: 2px -3px 4px $color-blue;
+                & .title {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}

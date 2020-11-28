@@ -9923,7 +9923,7 @@ body h1 {
 }
 @media (max-width: 576px) {
   body h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 body h2 {
@@ -9932,7 +9932,7 @@ body h2 {
 }
 @media (max-width: 576px) {
   body h2 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 body h3 {
@@ -9941,7 +9941,7 @@ body h3 {
 }
 @media (max-width: 576px) {
   body h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 body h4 {
@@ -9950,7 +9950,7 @@ body h4 {
 }
 @media (max-width: 576px) {
   body h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 body p, body li, body a {
@@ -9992,6 +9992,96 @@ body .page {
 .app-header .navigation .logo:hover {
   color: #30bbaf;
   text-decoration: underline;
+}
+
+.page--recipes .recipes-list {
+  margin-top: 30px;
+}
+.page--recipes .recipes-list a {
+  text-decoration: none;
+}
+.page--recipes .recipes-list-item {
+  border-radius: 15px;
+  background-color: #ceffe7;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.page--recipes .recipes-list-item .image {
+  border-radius: 15px 15px 0 0;
+  height: 250px;
+  transition: all 0.3s ease-in-out;
+}
+.page--recipes .recipes-list-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page--recipes .recipes-list-item .title {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+.page--recipes .recipes-list-item:hover {
+  background-color: #d3ffaf;
+  box-shadow: 2px -3px 4px #30bbaf;
+}
+.page--recipes .recipes-list-item:hover .title {
+  color: #30bbaf;
+}
+
+.page--recipe-detail .detail-container {
+  margin-top: 30px;
+}
+.page--recipe-detail .detail-container .recipe-info {
+  margin-top: 30px;
+}
+.page--recipe-detail .detail-container .recipe-info h2 {
+  margin-bottom: 10px;
+}
+.page--recipe-detail .detail-container .recipe-info div {
+  margin-bottom: 30px;
+}
+.page--recipe-detail .detail-container .recipe-info div ul {
+  list-style: disc;
+  transition: all 0.3s ease-in-out;
+}
+.page--recipe-detail .detail-container .recipe-info div ul li {
+  margin-bottom: 5px;
+}
+.page--recipe-detail .detail-container .recipe-info div ul li:hover {
+  list-style: circle;
+}
+.page--recipe-detail .detail-container .recipe-info div ol {
+  list-style: decimal;
+  transition: all 0.3s ease-in-out;
+}
+.page--recipe-detail .detail-container .recipe-info div ol li {
+  margin-bottom: 5px;
+}
+.page--recipe-detail .detail-container .recipe-info div ol li:hover {
+  list-style: disc;
+}
+.page--recipe-detail .detail-container .recipe-info .ingredients, .page--recipe-detail .detail-container .recipe-info .method {
+  width: 70%;
+}
+@media (max-width: 576px) {
+  .page--recipe-detail .detail-container .recipe-info .ingredients, .page--recipe-detail .detail-container .recipe-info .method {
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  .page--recipe-detail .detail-info-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.page--recipe-detail .detail-info-content h4 {
+  margin-bottom: 20px;
+}
+.page--recipe-detail .detail-info-content em {
+  color: #30bbaf;
 }
 
 /*# sourceMappingURL=app.css.map */
